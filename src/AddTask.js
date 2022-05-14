@@ -13,7 +13,8 @@ const data={
   task:text,
   username:localStorage.getItem("currentUser")
 }
-    fetch("http://localhost:4000/allTask",{
+    // fetch("http://localhost:4000/allTask",{
+      fetch("https://to-do-app-pradeep.herokuapp.com/allTask",{
        method:"POST",
        headers:{
          "content-Type":"application/json",

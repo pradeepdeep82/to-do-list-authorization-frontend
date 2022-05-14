@@ -46,7 +46,8 @@ function App() {
   // const [taskActive, settaskActive] = useState("");
   const toggleTask = (index) => {
 
-   fetch("http://localhost:4000/toggletask", {
+  //  fetch("http://localhost:4000/toggletask", {
+    fetch("https://to-do-app-pradeep.herokuapp.com/toggletask", {
      method:"PUT",
      headers:{
        "x-auth-token":localStorage.getItem("token"),
@@ -91,7 +92,8 @@ function App() {
   //   setTask([...newTask, ...activeRemainingTask]);
   // };
   const removeTaskAll = (index) => {
-    fetch("http://localhost:4000/allTask", {
+    // fetch("http://localhost:4000/allTask", {
+      fetch("https://to-do-app-pradeep.herokuapp.com/allTask", {
       method:"PUT",
       headers:{
         "content-Type":"application/json",
@@ -123,7 +125,8 @@ function App() {
   // };
   const allTask = () => {
    
-      fetch("http://localhost:4000/allTask",{
+      // fetch("http://localhost:4000/allTask",{
+        fetch("https://to-do-app-pradeep.herokuapp.com/allTask",{
         method:"GET",
         headers:{
           "content-Type":"application/json",

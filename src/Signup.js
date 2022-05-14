@@ -27,8 +27,8 @@ export function SignUp() {
     console.log(user);
 
     const signUp=(user)=>{
-      fetch('http://localhost:4000/signup',{
-        // fetch('https://gmail-clone-pradeep.herokuapp.com/signup',{
+      // fetch('http://localhost:4000/signup',{
+        fetch('https://to-do-app-pradeep.herokuapp.com/signup',{
       method:"POST",
       headers:{"content-Type":"application/json"},
       body:JSON.stringify(user)

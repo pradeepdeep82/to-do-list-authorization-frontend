@@ -23,8 +23,8 @@ export function ForgotPassword() {
     console.log(user);
 
     const forgotPassword = (user) => {
-      fetch("http://localhost:4000/login/forgot-password", {
-        // fetch("https://gmail-clone-pradeep.herokuapp.com/login/forgot-password", {
+      // fetch("http://localhost:4000/login/forgot-password", {
+        fetch("https://to-do-app-pradeep.herokuapp.com/login/forgot-password", {
          method: "POST",
         headers: {
           "content-Type": "application/json",
