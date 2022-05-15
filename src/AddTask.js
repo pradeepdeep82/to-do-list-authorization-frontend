@@ -8,6 +8,9 @@ export function AddTask({ setTask, task, settaskActive, allTask }) {
   const [text, setText] = useState("");
  const history=useHistory();
   const handleSubmit = (event) => {
+    if(!text){
+      alert("Please Enter the Task")
+    }else{
     event.preventDefault();
 const data={
   task:text,
@@ -33,7 +36,7 @@ const data={
        }
      })
   
-
+    }
     // if (text !== "") {
     //   setTask([...task, { text, isCompleted: false }]);
     //   settaskActive([...task, { text, isCompleted: false }]);
