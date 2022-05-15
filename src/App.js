@@ -142,7 +142,7 @@ function App() {
       })
     }
 
-useEffect(()=>allTask,[])
+useEffect(()=>allTask(),[])
 
   // const completedTask = () => {
   //   const newTask = task.filter((task) => task.isCompleted === true);
